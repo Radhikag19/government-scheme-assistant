@@ -1,0 +1,627 @@
+{
+  "metadata_version": "1.0",
+  "created_date": "2026-09-03",
+  "description": "Master metadata for the six schemes used in the AI Government Scheme Eligibility Assistant. Values are based on the provided scheme detail and FAQ documents. Fields not explicitly supported by the provided documents are null.",
+  "schemes": [
+    {
+      "scheme_id": "PM_USP_CSSS",
+      "scheme_name": "Pradhan Mantri Uchchatar Shiksha Protsahan (PM-USP) Central Sector Scheme of Scholarship for College and University Students",
+      "authority": {
+        "ministry": "Ministry of Education",
+        "department": "Department of Higher Education",
+        "organization": null
+      },
+      "scheme_type": "Scholarship",
+      "academic_year": "2025-26",
+      "eligibility": {
+        "age": null,
+        "education_level": [
+          "Undergraduate",
+          "Postgraduate"
+        ],
+        "course_type": [
+          "Regular degree courses",
+          "Professional courses"
+        ],
+        "study_year": [
+          "Fresh: 1st year of regular graduation",
+          "Renewal: subsequent years subject to renewal conditions"
+        ],
+        "gender": [
+          "Male",
+          "Female"
+        ],
+        "category": [
+          "General",
+          "OBC",
+          "SC",
+          "ST"
+        ],
+        "disability": "5% horizontal reservation for benchmark disabilities of 40% or more",
+        "income_limit": {
+          "amount": 450000,
+          "currency": "INR",
+          "period": "annual"
+        },
+        "geography": {
+          "scope": "State/Board based",
+          "details": "Fresh selection is based on the respective Board of Examination and State Education Board allocation."
+        },
+        "institution_type": "Recognized colleges/institutions, including eligible private colleges recognized by regulatory bodies and listed on AISHE",
+        "academic_requirement": "Above the 80th percentile of successful candidates in the relevant stream in Class XII",
+        "special_conditions": [
+          "Regular course only, not correspondence or distance mode",
+          "Must not receive another scholarship or fee reimbursement",
+          "Diploma students are not eligible",
+          "Students who took a drop after Class XII are not eligible for fresh application"
+        ]
+      },
+      "benefit": {
+        "amounts": [
+          {
+            "level": "Graduation",
+            "amount": 12000,
+            "currency": "INR",
+            "frequency": "annual",
+            "duration": "first three years"
+          },
+          {
+            "level": "Post-Graduation",
+            "amount": 20000,
+            "currency": "INR",
+            "frequency": "annual"
+          },
+          {
+            "level": "Technical courses",
+            "amount": 20000,
+            "currency": "INR",
+            "frequency": "annual",
+            "duration": "4th and 5th year where applicable"
+          }
+        ],
+        "maximum_fresh_scholarships_per_year": 82000,
+        "disbursement": "Direct Benefit Transfer (DBT) to Aadhaar-seeded bank account"
+      },
+      "application": {
+        "mode": "Online",
+        "portal": "National Scholarship Portal (NSP)",
+        "application_period": "As announced on NSP",
+        "process": "Fresh and renewal applications are submitted online and undergo institute/state-level verification"
+      },
+      "renewal": {
+        "academic_requirement": "At least 50% marks",
+        "attendance_requirement": "At least 75%",
+        "other_condition": "Applicant should not receive scholarship from another department/ministry"
+      },
+      "documents_required": [
+        "12th Mark Sheet",
+        "Family Income Certificate",
+        "Category/Caste Certificate for reserved category students",
+        "Disability Certificate, if applicable",
+        "Previous Year Mark Sheet for renewal"
+      ],
+      "restrictions": [
+        "No other scholarship or fee reimbursement",
+        "No distance/correspondence course",
+        "Diploma students are not eligible",
+        "Drop after Class XII makes a fresh applicant ineligible"
+      ],
+      "source_documents": [
+        "Pradhan Mantri Uchchatar Shiksha Protsahan (PM-USP) Central Sector Scheme of Scholarship for College and University students.pdf",
+        "FAQ_DOHE_PMUSP_CSSS.pdf"
+      ],
+      "source_url": null,
+      "verified_date": "2026-09-03"
+    },
+    {
+      "scheme_id": "NMMSS",
+      "scheme_name": "National Means-cum-Merit Scholarship Scheme",
+      "authority": {
+        "ministry": "Ministry of Education",
+        "department": "Department of School Education & Literacy",
+        "organization": null
+      },
+      "scheme_type": "Scholarship",
+      "academic_year": "2021-22 to 2025-26",
+      "eligibility": {
+        "age": null,
+        "education_level": [
+          "School education"
+        ],
+        "course_type": [
+          "Regular school education"
+        ],
+        "study_year": [
+          "Class VII for eligibility/selection test",
+          "Class IX onward for scholarship"
+        ],
+        "gender": [
+          "Male",
+          "Female"
+        ],
+        "category": "Reservation as per State/UT norms",
+        "disability": null,
+        "income_limit": {
+          "amount": 350000,
+          "currency": "INR",
+          "period": "annual",
+          "basis": "Parental income from all sources"
+        },
+        "geography": {
+          "scope": "State/UT",
+          "details": "Each State/UT has a fixed scholarship quota and its own reservation norms."
+        },
+        "institution_type": [
+          "Government schools",
+          "Government-aided schools",
+          "Local body schools"
+        ],
+        "academic_requirement": "Minimum 55% marks or equivalent grade in Class VII, relaxable by 5% for SC/ST students",
+        "special_conditions": [
+          "Selection test is conducted at Class VIII stage",
+          "Student must qualify in Mental Ability Test (MAT) and Scholastic Aptitude Test (SAT)",
+          "Minimum 40% aggregate in MAT and SAT, or 32% for SC/ST students"
+        ]
+      },
+      "benefit": {
+        "amount": 12000,
+        "currency": "INR",
+        "frequency": "annual",
+        "monthly_equivalent": 1000,
+        "fresh_scholarships_per_year": 100000,
+        "maximum_duration": "Four years, from Class IX to Class XII",
+        "disbursement": "Direct Benefit Transfer (DBT)"
+      },
+      "application": {
+        "mode": "Online",
+        "portal": "National Scholarship Portal (NSP)",
+        "application_period": null,
+        "process": "Online registration, application form submission, document upload and verification"
+      },
+      "renewal": {
+        "academic_requirement": "Minimum 60% marks in Class X, relaxable by 5% for SC/ST students",
+        "promotion_requirement": "Clear promotion from Class IX to X and Class XI to XII in first attempt"
+      },
+      "documents_required": [
+        "Aadhaar Card",
+        "Educational Certificates/Marksheet",
+        "Caste Certificate",
+        "Income Certificate of Parents",
+        "Disability Certificate, if applicable",
+        "Domicile Certificate",
+        "Other supporting documents as required"
+      ],
+      "restrictions": [
+        "Kendriya Vidyalayas are not eligible",
+        "Jawahar Navodaya Vidyalayas are not eligible",
+        "Residential schools with boarding, lodging and education facilities are not eligible",
+        "Private schools are not eligible",
+        "Studies abroad are not covered",
+        "Diploma/certificate-level courses are not covered"
+      ],
+      "source_documents": [
+        "National Means-cum-Merit Scholarship Scheme.pdf",
+        "FAQs-National Means-cum-Merit Scholarship Scheme.pdf"
+      ],
+      "source_url": null,
+      "verified_date": "2026-09-03"
+    },
+    {
+      "scheme_id": "PRAGATI",
+      "scheme_name": "Pragati Scholarship Scheme for Girl Students (Technical Diploma)",
+      "authority": {
+        "ministry": "Ministry of Education",
+        "department": null,
+        "organization": "All India Council for Technical Education (AICTE)"
+      },
+      "scheme_type": "Scholarship",
+      "academic_year": null,
+      "eligibility": {
+        "age": null,
+        "education_level": [
+          "Diploma"
+        ],
+        "course_type": [
+          "Technical Diploma"
+        ],
+        "study_year": [
+          "First year of Diploma",
+          "Second year of Diploma through lateral entry"
+        ],
+        "gender": [
+          "Female"
+        ],
+        "category": "Reservation as per Government of India norms",
+        "disability": null,
+        "income_limit": {
+          "amount": 800000,
+          "currency": "INR",
+          "period": "annual",
+          "basis": "Family income from all sources during current financial year"
+        },
+        "geography": {
+          "scope": "Specified Union Territories and North Eastern States",
+          "eligible_regions": [
+            "Andaman and Nicobar Islands",
+            "Jammu and Kashmir",
+            "Ladakh",
+            "Dadra and Nagar Haveli & Daman and Diu",
+            "Lakshadweep",
+            "Arunachal Pradesh",
+            "Assam",
+            "Manipur",
+            "Meghalaya",
+            "Mizoram",
+            "Nagaland",
+            "Sikkim",
+            "Tripura"
+          ]
+        },
+        "institution_type": "AICTE-approved institution",
+        "academic_requirement": null,
+        "special_conditions": [
+          "Maximum two girl children per family",
+          "Must not receive another scholarship/financial assistance during the course",
+          "Course and institution must be AICTE approved"
+        ]
+      },
+      "benefit": {
+        "amount": 50000,
+        "currency": "INR",
+        "frequency": "annual",
+        "first_year_duration": "Maximum three years",
+        "lateral_entry_duration": "Maximum two years",
+        "purpose": [
+          "College fee",
+          "Computer purchase",
+          "Stationery",
+          "Books",
+          "Equipment",
+          "Software"
+        ],
+        "disbursement": "Direct Benefit Transfer (DBT)"
+      },
+      "application": {
+        "mode": "Online",
+        "portal": "National Scholarship Portal (NSP)",
+        "application_period": "Refer to NSP for current dates",
+        "process": "Apply online after the application process is announced by AICTE/NSP"
+      },
+      "renewal": {
+        "requirement": "Promotion Certificate duly certified by the Head of Institution",
+        "condition": "Student must continue to meet renewal conditions"
+      },
+      "documents_required": [
+        "SSC/10th certificate and mark sheet",
+        "HSC/12th certificate and mark sheet for Degree level where applicable",
+        "ITI certificate and mark sheet for Diploma lateral entry where applicable",
+        "Diploma certificate and mark sheet for Degree lateral entry where applicable",
+        "Category certificate, if applicable",
+        "Study/Bonafide Certificate",
+        "Annual Family Income Certificate",
+        "Parent Declaration",
+        "Promotion Certificate for renewal"
+      ],
+      "restrictions": [
+        "Only female students are eligible",
+        "Maximum two girl children per family",
+        "Students receiving other Central Government, State Government or AICTE-sponsored scholarships are not eligible",
+        "Students in non-technical or non-AICTE-approved courses/institutions are not eligible",
+        "Postgraduate students are not eligible",
+        "Failed/dropped-out students are not eligible for further scholarship"
+      ],
+      "source_documents": [
+        "Pragati_Scholarship.pdf",
+        "FAQ_Pragati-Scheme.pdf"
+      ],
+      "source_url": null,
+      "verified_date": "2026-09-03"
+    },
+    {
+      "scheme_id": "PGS_SC_ST",
+      "scheme_name": "Post-Graduate Scholarships for Professional Courses for SC/ST Candidates",
+      "authority": {
+        "ministry": null,
+        "department": null,
+        "organization": "University Grants Commission (UGC)"
+      },
+      "scheme_type": "Scholarship",
+      "academic_year": null,
+      "eligibility": {
+        "age": null,
+        "education_level": [
+          "Postgraduate"
+        ],
+        "course_type": [
+          "Professional courses"
+        ],
+        "study_year": [
+          "First year of postgraduate course"
+        ],
+        "gender": [
+          "Male",
+          "Female"
+        ],
+        "category": [
+          "SC",
+          "ST"
+        ],
+        "disability": null,
+        "income_limit": null,
+        "geography": {
+          "scope": "India",
+          "details": "Recognized Indian Universities/Institutions/Colleges"
+        },
+        "institution_type": [
+          "Institutions under Sections 2(f) and 12(B) of UGC Act",
+          "Eligible deemed universities under Section 3 of UGC Act",
+          "Universities/institutions/colleges funded by Central or State Government",
+          "Institutes of National Importance"
+        ],
+        "academic_requirement": "Graduate degree in the relevant subject and admission to a regular full-time professional postgraduate course",
+        "special_conditions": [
+          "Only first-year postgraduate students in the current academic year may apply",
+          "Courses requiring approval from specified regulatory councils are treated as professional courses",
+          "M.A., M.Sc., M.Com., MSW and Mass Communication and Journalism are identified as non-professional courses"
+        ]
+      },
+      "benefit": {
+        "beneficiaries_per_year": 1000,
+        "amounts": [
+          {
+            "course": "M.E./M.Tech.",
+            "amount": 7800,
+            "currency": "INR",
+            "frequency": "monthly"
+          },
+          {
+            "course": "Other eligible professional courses",
+            "amount": 4500,
+            "currency": "INR",
+            "frequency": "monthly"
+          }
+        ],
+        "duration": "Two or three years depending on postgraduate course tenure",
+        "contingency": "No contingency payable from selection year 2017-18",
+        "disbursement": "UGC pattern through designated bank branches"
+      },
+      "application": {
+        "mode": "Online",
+        "portal": "National Scholarship Portal (NSP)",
+        "application_period": "Once a year after UGC advertisement",
+        "process": "Online registration, OTP verification and application submission"
+      },
+      "renewal": {
+        "requirement": "Annual progress report and good conduct/prescribed attendance",
+        "restriction": "Change in course of study is not permitted",
+        "promotion": "Failure to get promoted results in forfeiture of scholarship"
+      },
+      "documents_required": [],
+      "restrictions": [
+        "General category and OBC candidates are not eligible",
+        "Correspondence and distance education professional postgraduate courses are not eligible",
+        "Failure to pass the first year in first division or equivalent CGPA may result in cancellation",
+        "False information or incorrect bank details may result in cancellation",
+        "Discontinuation of studies may result in cancellation"
+      ],
+      "source_documents": [
+        "Post-Graduate Scholarships for Professional Courses for SC_ST Candidates.pdf",
+        "Post-Graduate Scholarships for Professional Courses for SC/ST Candidates FAQ.pdf"
+      ],
+      "source_url": null,
+      "verified_date": "2026-09-03"
+    },
+    {
+      "scheme_id": "SPORTS_FREE_EDUCATION",
+      "scheme_name": "Free Education for Sports Medal Winners / Participants of National / International Events",
+      "authority": {
+        "ministry": "Ministry of Education",
+        "department": null,
+        "organization": "University Grants Commission (UGC)"
+      },
+      "scheme_type": "Scholarship / Educational Assistance",
+      "academic_year": null,
+      "eligibility": {
+        "age": null,
+        "education_level": [
+          "Bachelor's degree",
+          "Postgraduate",
+          "Diploma",
+          "PG Degree",
+          "M.Phil",
+          "Ph.D.",
+          "MBA",
+          "Other professional courses"
+        ],
+        "course_type": [
+          "Higher education"
+        ],
+        "study_year": null,
+        "gender": [
+          "Male",
+          "Female"
+        ],
+        "category": null,
+        "disability": null,
+        "income_limit": null,
+        "geography": {
+          "scope": "India"
+        },
+        "institution_type": [
+          "Universities/institutions/colleges under Sections 2(f) and 12(B) of UGC Act",
+          "Eligible deemed universities under Section 3 of UGC Act",
+          "Universities/institutions/colleges funded by Central/State Government",
+          "Institutes of National Importance"
+        ],
+        "academic_requirement": null,
+        "special_conditions": [
+          "Medal winners of National Games may be eligible",
+          "Participants in recognized international sporting events may be eligible",
+          "International events must be recognized by the World University Service, International Olympic Committee, or Olympic Committee of Asia",
+          "Subsequent-year assistance depends on subsequent sports performance"
+        ]
+      },
+      "benefit": {
+        "tuition_fee": "Actual or specified percentage of actual depending on sports achievement",
+        "hostel": "Actual",
+        "special_courses_abroad": "As per Government of India norms",
+        "kit_allowance": "Varies by level of sports achievement",
+        "examples": [
+          "Olympics/World Championship categories: Kit ₹15,000 per annum",
+          "Other achievement categories may have lower kit allowances and/or specified percentage of tuition support"
+        ],
+        "disbursement": "Financial assistance reimbursed by UGC to the university concerned"
+      },
+      "application": {
+        "mode": "Online / prescribed application through institution",
+        "portal": null,
+        "application_period": null,
+        "process": "Complete prescribed form, attach participation/medal certificate attested by Registrar/Principal, verify and submit through designated authority"
+      },
+      "renewal": {
+        "requirement": "Subsequent sports performance and academic progress",
+        "progress_requirement": "Progress report submitted after the first year"
+      },
+      "documents_required": [
+        "Prescribed application form",
+        "Certificate of participation/medal winning attested by Registrar/Principal"
+      ],
+      "restrictions": [
+        "UGC may terminate assistance for misconduct",
+        "Unsatisfactory academic progress may result in termination",
+        "Continuation is subject to sports performance and institutional recommendation"
+      ],
+      "source_documents": [
+        "Free Education For Sports Medal Winners _ Participants Of National_ International Events.pdf",
+        "FAQ for Free Education for Sports Medal Winners / Participants of National / International Events.pdf"
+      ],
+      "source_url": null,
+      "verified_date": "2026-09-03"
+    },
+    {
+      "scheme_id": "NITI_INTERNSHIP",
+      "scheme_name": "NITI Internship Scheme",
+      "authority": {
+        "ministry": null,
+        "department": null,
+        "organization": "NITI Aayog, Government of India"
+      },
+      "scheme_type": "Internship",
+      "academic_year": null,
+      "eligibility": {
+        "age": null,
+        "education_level": [
+          "Undergraduate",
+          "Graduate",
+          "Postgraduate",
+          "Research/PhD"
+        ],
+        "course_type": [
+          "Bachelor degree",
+          "Postgraduate programme",
+          "Research/PhD"
+        ],
+        "study_year": [
+          "Undergraduate: completed/appeared in second year/4th semester",
+          "Graduate/PG: completed/appeared in first year/2nd semester of postgraduate programme",
+          "Research scholars/PhD"
+        ],
+        "gender": [
+          "Male",
+          "Female"
+        ],
+        "category": null,
+        "disability": null,
+        "income_limit": null,
+        "geography": {
+          "scope": "India and abroad",
+          "details": "Recognized University/Institution within India or abroad"
+        },
+        "institution_type": "Recognized University/Institution",
+        "academic_requirement": [
+          "Undergraduate: at least 85% or equivalent in Class XII",
+          "Graduate/PG/research: at least 70% or equivalent in Graduation",
+          "Completed/final-exam candidates: at least 70% cumulative marks in graduation/postgraduation"
+        ],
+        "special_conditions": [
+          "Completed-study applicants must begin the internship within six months of final result declaration",
+          "Attendance must be at least 75%",
+          "Selected applicant must produce original marksheets and NOC at joining",
+          "Applicant must have their own laptop",
+          "Only one area of interest may be selected"
+        ]
+      },
+      "benefit": {
+        "stipend": "None",
+        "certificate": "Experience Certificate/Internship Completion Certificate on successful completion",
+        "other_benefits": [
+          "Exposure to Government functioning and developmental policy issues",
+          "Opportunity to contribute policy inputs",
+          "Working space and internet facility as deemed fit by concerned NITI Aayog heads"
+        ]
+      },
+      "duration": {
+        "minimum": "6 weeks",
+        "maximum": "6 months"
+      },
+      "application": {
+        "mode": "Online only",
+        "portal": "NITI Aayog internship website",
+        "application_period": "1st to 10th of every month",
+        "advance_application": "2 months in advance",
+        "process": "Online form submission, area of interest selection, preview/edit, final submission and application status tracking"
+      },
+      "renewal": {
+        "reapplication": "Allowed after rejection once eligibility requirements are met",
+        "repeat_internship": "Allowed, but only once in a financial year"
+      },
+      "documents_required": [
+        "Class 10th marksheet",
+        "Class 12th marksheet",
+        "Graduation/PG marksheets and degree as applicable",
+        "NOC in specified format"
+      ],
+      "restrictions": [
+        "Unpaid internship",
+        "First-year undergraduate students cannot apply",
+        "Selection is subject to discretion of selectors",
+        "Only selected applicants are contacted",
+        "Only one internship is allowed in a financial year",
+        "Incomplete eligibility results in rejection"
+      ],
+      "domains": [
+        "Agriculture",
+        "Data Management and Analysis",
+        "Economics",
+        "Education/Human Resources Development",
+        "Energy Sector",
+        "Foreign Trade / Commerce",
+        "Governance",
+        "Health, Nutrition, Women & Child Development",
+        "Industry",
+        "Infrastructure connectivity",
+        "Mass Communications and Social Media",
+        "Mining Sector",
+        "Natural Resources, Environment & Forests",
+        "Programme Monitoring and Evaluation",
+        "Project appraisal and management",
+        "Public Finances/Budget",
+        "Public Private Partnership",
+        "Rural Development and SDGs",
+        "Science and Technology",
+        "Skill Development & Employment",
+        "Social justice and empowerment",
+        "Sports and Youth development",
+        "Tourism and culture",
+        "Urbanization / smart city",
+        "Water Resources"
+      ],
+      "source_documents": [
+        "NITI_Internship_Scheme.pdf",
+        "FAQs_NITI_Internship_Scheme.pdf"
+      ],
+      "source_url": null,
+      "verified_date": "2026-09-03"
+    }
+  ]
+}
