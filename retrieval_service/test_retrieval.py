@@ -1,35 +1,88 @@
 from retrieval_service.retriever import SchemeRetriever
 
 
-def main():
+def print_results(title, results):
 
-    retriever = SchemeRetriever()
+    print("\n" + "=" * 80)
+    print(title)
+    print("=" * 80)
 
-    query = "What benefits are available to students who have won medals in national sporting events?"
+    documents = results.get("documents", [[]])[0]
+    metadatas = results.get("metadatas", [[]])[0]
+    distances = results.get("distances", [[]])[0]
 
-    results = retriever.retrieve(query, top_k=5)
+    for index, document in enumerate(documents):
 
-    print("\n" + "=" * 70)
-    print("QUERY")
-    print("=" * 70)
-    print(query)
+        metadata = metadatas[index]
+        distance = distances[index]
 
-    print("\n" + "=" * 70)
-    print("RETRIEVED CHUNKS")
-    print("=" * 70)
+        print(f"\nResult {index + 1}")
+        print("-" * 80)
 
-    for i, result in enumerate(results["documents"][0], start=1):
+        print(
+            f"Scheme   : "
+            f"{metadata.get('scheme_id')}"
+        )
 
-        metadata = results["metadatas"][0][i - 1]
-        distance = results["distances"][0][i - 1]
+        print(
+            f"Source   : "
+            f"{metadata.get('source')}"
+        )
 
-        print(f"\n--- Result {i} ---")
-        print(f"Scheme: {metadata.get('scheme_id')}")
-        print(f"Source: {metadata.get('source')}")
-        print(f"Section: {metadata.get('section')}")
-        print(f"Distance: {distance:.4f}")
-        print(f"Text:\n{result}")
+        print(
+            f"Section  : "
+            f"{metadata.get('section')}"
+        )
+
+        print(
+            f"Distance : "
+            f"{distance}"
+        )
+
+        print("\nText:")
+        print(document[:1000])
 
 
-if __name__ == "__main__":
-    main()
+retriever = SchemeRetriever()
+
+
+# --------------------------------------------------
+# TEST 1
+# Search across ALL schemes
+# --------------------------------------------------
+
+query = (
+    "What benefits are available to students "
+    "who have won medals in national sporting events?"
+)
+
+results = retriever.retrieve(
+    query=query,
+    top_k=5
+)
+
+print_results(
+    "ALL-SCHEME RETRIEVAL",
+    results
+)
+
+
+# --------------------------------------------------
+# TEST 2
+# Search only PRAGATI
+# --------------------------------------------------
+
+query = (
+    "What are the eligibility requirements?"
+)
+
+results = retriever.retrieve(
+    query=query,
+    top_k=5,
+    scheme_id="pragati"
+)
+
+print_results(
+    "PRAGATI-ONLY RETRIEVAL",
+    results
+)
